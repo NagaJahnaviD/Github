@@ -31,6 +31,6 @@ app.put('/students/:id',(req,res)=>{
     res.send(students[index],{message:"Student updated successfully"});
 });
 
-app.listen(3000,()=>{
+app.listen(3000,'0.0.0.0',()=>{
     console.log("Server is running on port 3000");
 });
